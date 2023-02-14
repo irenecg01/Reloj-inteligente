@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <link rel="stylesheet" id="style" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="reloj">
+        <div class="botones">
+            <button id="boton1"> Desierto  </button>
+            <button id="boton2"> Playa </button>
+            <button id="boton3"> Montaña </button>
+    
+        </div>
+        <p class="fecha"></p>
+        <p class="tiempo"></p>
+        <div>
+            <input type="submit" class="alarma2btn" value="alarma"/>
+          </div>
+    </div>
+
+    
+      
+    <div class="modal">
+        
+        <button id="cerrar" onclick="closeModal()">x</button>
+        <div id="time">00:00:00</div>
+        <h3>Configurar la hora de la alarma:</h3>
+        <select name="" id="alarmHrs"></select>
+        <select name="" id="alarmMins"></select>
+        <select name="" id="alarmSecs"></select>
+        <br>
+        <br>
+
+        <div id="myDiv">
+            <h3>Elige el sonido de la Alarma:</h3>
+            <br>
+            <select name="" id="mySelect"></select>
+        </div>
+        <div class="botones_modal">
+            <button id="mySetButton">Guardar</button>
+    
+            <button id="mostrar" onclick="mostrarAlarma()">Ver Alarmas</button>
+    
+            <button id="myClearButton" onclick="clearAlarm()">Limpiar</button>
+        </div>
+    </div>
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
